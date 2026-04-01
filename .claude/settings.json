@@ -4,7 +4,8 @@
       "Read(//c/code/**)",
       "WebFetch(domain:www.notion.so)",
       "mcp__claude_ai_Notion__notion-fetch",
-      "Bash(pnpm create:*)"
+      "Bash(pnpm create:*)",
+      "Bash(pnpm dlx:*)"
     ]
   }
 }
