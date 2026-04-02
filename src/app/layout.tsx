@@ -19,6 +19,7 @@ const fredoka = Fredoka({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thebigsqueeze.vercel.app"),
   title: "The Big Squeeze | AI Hackathon",
   description:
     "A one-day AI hackathon by Neural Nectar. Build something with AI. Show the group what you made. April 11, 2026.",
