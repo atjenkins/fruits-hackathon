@@ -8,7 +8,19 @@
       "Bash(pnpm dlx:*)",
       "Bash(pnpm add:*)",
       "Bash(pnpm build:*)",
-      "Bash(pnpm dev:*)"
+      "Bash(pnpm dev:*)",
+      "Bash(gh repo:*)",
+      "Read(//c/Users/Arik-Local/.claude/**)",
+      "Bash(curl -s -X POST https://api.supabase.com/v1/projects/rkofdqtterxzysscpptq/database/query -H 'Authorization: Bearer sbp_1beb757bc99abf3770ed592931786b200c7b52da' -H 'Content-Type: application/json' -d '{\"query\": \"SELECT table_name FROM information_schema.tables WHERE table_schema = '\\\\''public'\\\\'' ORDER BY table_name;\"}')",
+      "Bash(curl -s -X POST https://api.supabase.com/v1/projects/rkofdqtterxzysscpptq/database/query -H 'Authorization: Bearer sbp_1beb757bc99abf3770ed592931786b200c7b52da' -H 'Content-Type: application/json' -d '{\"query\": \"create table registrations \\(id uuid default gen_random_uuid\\(\\) primary key, name text not null, email text not null unique, team_preference text not null, experience text not null, project_idea text, created_at timestamptz default now\\(\\)\\);\"}')",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__execute_sql",
+      "mcp__supabase__apply_migration",
+      "Bash(npx next:*)",
+      "Bash(git stash:*)",
+      "mcp__claude_ai_Figma__whoami",
+      "mcp__claude_ai_Figma__create_new_file",
+      "mcp__claude_ai_Figma__use_figma"
     ]
   }
 }

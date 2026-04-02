@@ -60,7 +60,7 @@ const Hero = () => {
           </span>
           <span className="flex items-center gap-2">
             <MapPin size={18} className="text-primary" />
-            Location TBD
+            Location TBD (based on # of sign ups)
           </span>
           <span className="rounded-full bg-primary/10 px-3 py-1 text-primary">
             ~10–15 people
@@ -69,14 +69,15 @@ const Hero = () => {
 
         <p className="mx-auto mt-6 max-w-xl text-base text-muted-foreground">
           Build something with AI. Show the group what you made. Whether
-          you&apos;ve been coding for years or never shipped anything — this is
-          for you.
+          you&apos;ve been coding for years or never shipped anything... this is
+          for you. The juice is in the doing.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Button
             size="lg"
             className="rounded-full text-base"
+            nativeButton={false}
             render={<a href="#register" />}
           >
             Register Now
@@ -85,6 +86,7 @@ const Hero = () => {
             variant="outline"
             size="lg"
             className="rounded-full text-base"
+            nativeButton={false}
             render={<a href="#ideas" />}
           >
             Browse Ideas

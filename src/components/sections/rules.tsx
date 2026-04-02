@@ -9,7 +9,7 @@ const points = [
   {
     icon: Clock,
     title: "How does it work?",
-    description: "One sentence on the AI / tech underneath.",
+    description: "A short description of the AI / tech underneath.",
   },
   {
     icon: Lightbulb,
@@ -30,7 +30,9 @@ const Rules = () => {
           minutes. That&apos;s it.
         </p>
         <p className="text-muted-foreground mb-10">
-          No slides required. No polish required. Unfinished is totally fine.
+          No slides required. No polish required. Working is better than
+          perfect — you can always iterate later. But we want to see what you
+          built either way.
         </p>
 
         <div className="grid gap-6 sm:grid-cols-3">

@@ -30,11 +30,11 @@ const faqs = [
   },
   {
     q: "What if I don't finish my project?",
-    a: "Totally fine. Unfinished is welcome. The point is to learn and build — show what you made, what worked, and what surprised you.",
+    a: "Working is better than perfect — you can always iterate later. But we want to see what you built either way. Show what you made, what worked, and what surprised you.",
   },
   {
     q: "How long are presentations?",
-    a: "5 minutes each. Show your thing, explain how it works (one sentence), share what you learned. No slides needed.",
+    a: "5 minutes each. Show your thing, explain how it works, share what you learned. No slides needed.",
   },
 ];
 

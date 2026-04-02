@@ -13,9 +13,46 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Badge } from "@/components/ui/badge";
 import { CheckCircle2 } from "lucide-react";
 
-const Registration = () => {
+export type Attendee = {
+  name: string;
+  team_preference: string;
+};
+
+const TEAM_LABELS: Record<string, string> = {
+  solo: "Solo",
+  pair: "Looking for pair",
+  either: "Open",
+};
+
+const AttendeeList = ({ attendees }: { attendees: Attendee[] }) => {
+  if (attendees.length === 0) return null;
+
+  return (
+    <div className="mt-12">
+      <h3 className="font-heading text-xl font-bold text-center mb-4">
+        Who&apos;s in ({attendees.length})
+      </h3>
+      <ul className="flex flex-col gap-2">
+        {attendees.map((a) => (
+          <li
+            key={a.name}
+            className="flex items-center justify-between rounded-lg bg-white/60 px-4 py-2.5"
+          >
+            <span className="font-medium">{a.name}</span>
+            <Badge variant="secondary">
+              {TEAM_LABELS[a.team_preference] ?? a.team_preference}
+            </Badge>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const Registration = ({ attendees }: { attendees: Attendee[] }) => {
   const [state, formAction, isPending] = useActionState<
     RegistrationState,
     FormData
@@ -32,6 +69,7 @@ const Registration = () => {
           <p className="text-muted-foreground">
             We&apos;ll send you details as the event gets closer. Get hyped.
           </p>
+          <AttendeeList attendees={attendees} />
         </div>
       </section>
     );
@@ -126,6 +164,8 @@ const Registration = () => {
             {isPending ? "Registering..." : "Count me in"}
           </Button>
         </form>
+
+        <AttendeeList attendees={attendees} />
       </div>
     </section>
   );

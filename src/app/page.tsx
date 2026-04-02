@@ -6,10 +6,18 @@ import ToolsResources from "@/components/sections/tools-resources";
 import Guides from "@/components/sections/guides";
 import Rules from "@/components/sections/rules";
 import FAQ from "@/components/sections/faq";
-import Checklist from "@/components/sections/checklist";
 import Registration from "@/components/sections/registration";
+import { supabase } from "@/lib/supabase";
+import { connection } from "next/server";
 
-const Home = () => {
+const Home = async () => {
+  await connection();
+
+  const { data: attendees } = await supabase
+    .from("registrations")
+    .select("name, team_preference")
+    .order("created_at", { ascending: true });
+
   return (
     <>
       <Nav />
@@ -21,8 +29,7 @@ const Home = () => {
         <Guides />
         <Rules />
         <FAQ />
-        <Checklist />
-        <Registration />
+        <Registration attendees={attendees ?? []} />
       </main>
       <footer className="border-t py-8 text-center text-sm text-muted-foreground">
         <p>

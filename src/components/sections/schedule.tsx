@@ -1,13 +1,47 @@
 const blocks = [
-  { time: "9:00 AM", icon: "👋", title: "Welcome & Setup", note: "Arrive, get on wifi, install tools, pick your project" },
-  { time: "9:30 AM", icon: "🎤", title: "Kickoff Demo", note: "Arik demos a project to show what's possible" },
-  { time: "10:00 AM", icon: "🛠️", title: "Build Block 1", note: "Free build — Arik circulates and helps" },
-  { time: "11:00 AM", icon: "⚡", title: "Live Mini-Demo", note: "Arik does a 15-min live build mid-session (optional watch)" },
-  { time: "12:00 PM", icon: "🍕", title: "Lunch", note: "Eat, rest, talk through your project" },
-  { time: "1:00 PM", icon: "🛠️", title: "Build Block 2", note: "Polish, iterate, prep your 5-min pitch" },
-  { time: "1:45 PM", icon: "⏰", title: "Wrap-up Reminder", note: "Finish and rehearse" },
-  { time: "2:00 PM", icon: "🎤", title: "Presentations", note: "5 min each — everyone presents" },
-  { time: "~3:30 PM", icon: "🎉", title: "Done", note: "Hang out, debrief, vibe" },
+  {
+    time: "10:00 AM",
+    icon: "👋",
+    title: "Welcome & Kickoff",
+    note: "Arrive, intros, and a quick demo of what's possible",
+  },
+  {
+    time: "10:30 AM",
+    icon: "🔧",
+    title: "Setup Help & Build Start ",
+    note: "Arik helps with tools & environment — or jump straight into building",
+  },
+  // { time: "11:30 AM", icon: "🛠️", title: "Build Block 1", note: "Free build — Arik circulates and helps" },
+  {
+    time: "~12:30 PM",
+    icon: "🍕",
+    title: "Lunch",
+    note: "Eat, share progress, bounce ideas off each other",
+  },
+  {
+    time: "2:30 PM",
+    icon: "⚡",
+    title: "Live Mini-Demo",
+    note: "Arik does a 15-min live build mid-session (optional watch)",
+  },
+  {
+    time: "4:00 PM",
+    icon: "🎤",
+    title: "Presentations",
+    note: "5 min each — everyone shows what they built",
+  },
+  {
+    time: "5:00 PM",
+    icon: "🎉",
+    title: "Done",
+    note: "Hang out, debrief, vibe",
+  },
+  {
+    time: "5:30 PM+",
+    icon: "🌙",
+    title: "After Hours Hacking",
+    note: "Optional — keep building if you're in the zone",
+  },
 ];
 
 const Schedule = () => {

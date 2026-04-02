@@ -22,6 +22,19 @@ export const metadata: Metadata = {
   title: "The Big Squeeze | AI Hackathon",
   description:
     "A one-day AI hackathon by Neural Nectar. Build something with AI. Show the group what you made. April 11, 2026.",
+  icons: {
+    icon: [
+      { url: "/branding/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/branding/favicon-16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/branding/apple-touch-icon-180.png",
+  },
+  openGraph: {
+    title: "The Big Squeeze | AI Hackathon",
+    description:
+      "A one-day AI hackathon by Neural Nectar. Build something with AI. Show the group what you made.",
+    images: [{ url: "/branding/og-image-1200x630.png", width: 1200, height: 630 }],
+  },
 };
 
 const RootLayout = ({

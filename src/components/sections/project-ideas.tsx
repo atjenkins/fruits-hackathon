@@ -16,8 +16,8 @@ const tiers: { label: string; color: string; badgeBg: string; ideas: Idea[] }[] 
   },
   {
     label: "Intermediate",
-    color: "text-yellow",
-    badgeBg: "bg-yellow/15 text-yellow hover:bg-yellow/15",
+    color: "text-amber-600",
+    badgeBg: "bg-amber-100 text-amber-600 hover:bg-amber-100",
     ideas: [
       { title: "Claude-Powered Notion Agent", description: "Use Claude API to build an agent that interacts with a Notion database." },
       { title: "AI Research Assistant", description: "Workflow that takes a topic, searches the web, and produces a structured briefing." },
@@ -34,6 +34,7 @@ const tiers: { label: string; color: string; badgeBg: string; ideas: Idea[] }[] 
       { title: "MCP Integration", description: "Build a custom MCP server connecting Claude to a tool or data source you use." },
       { title: "Multi-Step AI Agent", description: "AI takes input, breaks it into steps, and executes with tools — web search, APIs, files." },
       { title: "AI Data Analysis", description: "Feed Claude a dataset, generate charts, ask questions, and write a summary automatically." },
+      { title: "Browser Video Game", description: "Build a playable game in the browser — AI handles the code, you handle the fun." },
     ],
   },
 ];
@@ -47,6 +48,7 @@ const ProjectIdeas = () => {
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
           Pick one, remix one, or bring your own. Sorted roughly by difficulty.
+          Template repos and resources will be uploaded to GitHub as we get closer.
         </p>
 
         <div className="flex flex-col gap-12">
