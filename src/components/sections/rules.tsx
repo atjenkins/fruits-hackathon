@@ -20,7 +20,7 @@ const points = [
 
 const Rules = () => {
   return (
-    <section id="rules" className="py-20">
+    <section id="rules" className="bg-juice py-20">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="font-heading text-4xl font-bold mb-4">
           Presentation Format
@@ -37,7 +37,7 @@ const Rules = () => {
 
         <div className="grid gap-6 sm:grid-cols-3">
           {points.map((p) => (
-            <div key={p.title} className="flex flex-col items-center gap-3 rounded-xl border bg-juice p-6">
+            <div key={p.title} className="flex flex-col items-center gap-3 rounded-xl border bg-white p-6">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                 <p.icon size={24} className="text-primary" />
               </div>

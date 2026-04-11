@@ -5,11 +5,11 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const links = [
-  { href: "#schedule", label: "Schedule" },
-  { href: "#ideas", label: "Ideas" },
-  { href: "#tools", label: "Tools" },
-  { href: "#guides", label: "Guides" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#schedule", label: "Schedule" },
+  { href: "/ideas", label: "Ideas" },
+  { href: "/tools", label: "Tools" },
+  { href: "/guides", label: "Guides" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 const Nav = () => {
@@ -18,7 +18,7 @@ const Nav = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-border/50 bg-white/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
-        <a href="#" className="flex items-center gap-2 font-heading text-xl font-bold text-primary">
+        <a href="/" className="flex items-center gap-2 font-heading text-xl font-bold text-primary">
           <img src="/branding/favicon-32.png" alt="" width={24} height={24} className="h-6 w-6" />
           The Big Squeeze
         </a>
@@ -38,7 +38,7 @@ const Nav = () => {
             size="sm"
             className="rounded-full"
             nativeButton={false}
-            render={<a href="#register" />}
+            render={<a href="/#register" />}
           >
             Register
           </Button>
@@ -70,7 +70,7 @@ const Nav = () => {
           <Button
             size="sm"
             className="w-fit rounded-full"
-            render={<a href="#register" onClick={() => setOpen(false)} />}
+            render={<a href="/#register" onClick={() => setOpen(false)} />}
           >
             Register
           </Button>

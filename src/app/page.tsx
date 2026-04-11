@@ -1,9 +1,6 @@
 import Nav from "@/components/nav";
 import Hero from "@/components/sections/hero";
 import Schedule from "@/components/sections/schedule";
-import ProjectIdeas from "@/components/sections/project-ideas";
-import ToolsResources from "@/components/sections/tools-resources";
-import Guides from "@/components/sections/guides";
 import Rules from "@/components/sections/rules";
 import FAQ from "@/components/sections/faq";
 import Registration from "@/components/sections/registration";
@@ -24,9 +21,6 @@ const Home = async () => {
       <main>
         <Hero />
         <Schedule />
-        <ProjectIdeas />
-        <ToolsResources />
-        <Guides />
         <Rules />
         <FAQ />
         <Registration attendees={attendees ?? []} />

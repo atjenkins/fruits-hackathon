@@ -20,7 +20,21 @@
       "Bash(git stash:*)",
       "mcp__claude_ai_Figma__whoami",
       "mcp__claude_ai_Figma__create_new_file",
-      "mcp__claude_ai_Figma__use_figma"
+      "mcp__claude_ai_Figma__use_figma",
+      "Bash(ls -la /c/code/fruits-hackathon/*.config.* /c/code/fruits-hackathon/*.config.mjs)",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\code\\fruits-hackathon\\src\\components"
     ]
   }
 }

@@ -87,7 +87,7 @@ const Hero = () => {
             size="lg"
             className="rounded-full text-base"
             nativeButton={false}
-            render={<a href="#ideas" />}
+            render={<a href="/ideas" />}
           >
             Browse Ideas
           </Button>

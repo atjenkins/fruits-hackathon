@@ -40,7 +40,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section id="faq" className="bg-juice py-20">
+    <section id="faq" className="py-20">
       <div className="mx-auto max-w-3xl px-6">
         <h2 className="font-heading text-4xl font-bold text-center mb-12">
           FAQ
